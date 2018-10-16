@@ -1,0 +1,22 @@
+{
+  "name": "natours-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass ./sass/main.scss ./css/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JohnDinhCodes/natours-project.git"
+  },
+  "author": "John Dinh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JohnDinhCodes/natours-project/issues"
+  },
+  "homepage": "https://github.com/JohnDinhCodes/natours-project#readme",
+  "devDependencies": {
+    "node-sass": "^4.9.4"
+  }
+}
