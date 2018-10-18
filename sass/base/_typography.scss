@@ -49,6 +49,10 @@ body {
     letter-spacing: 2px;
     transition: all 500ms;
 
+    &--shadow {
+        text-shadow: .25rem .5rem 2rem rgba($color-black, .2);
+    }
+
     &:hover {
         transform: scale(1.2);
         text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
