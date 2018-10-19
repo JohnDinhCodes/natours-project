@@ -16,7 +16,7 @@
         width: 100%;
 
         backface-visibility: hidden;
-        border-radius: 3px;
+        border-radius: $default-border-radius;
         box-shadow: 0 1.5rem 4rem rgba($color-black, .15);
         overflow: hidden;
 
@@ -130,7 +130,7 @@
                 padding: 1rem;
 
                 &:not(:last-child) {
-                    border-bottom: 1px solid $color-grey-light-2;
+                    border-bottom: 1px solid $color-gray-light-2;
                 }
             }
         }
