@@ -5,6 +5,15 @@
 
     &:not(:last-child) {
         margin-bottom: $gutter-vertical;
+        
+        @include bp(M) {
+            margin-bottom: $gutter-vertical-small;
+        }
+    }
+
+    @include bp(M) {
+        max-width: 50rem;
+        padding: 0 3rem;
     }
 
     [class^="col-"] {
@@ -12,6 +21,15 @@
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
+
+            @include bp(M) {
+                margin-right: 0;
+                margin-bottom: $gutter-vertical-small;
+            }
+        }
+
+        @include bp(M) {
+            width: 100% !important;
         }
     }
 
