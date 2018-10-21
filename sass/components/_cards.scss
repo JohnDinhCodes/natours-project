@@ -7,7 +7,7 @@
     height: 52rem;
 
     &__side {
-        
+
         height: 52rem;
         transition: all 800ms ease;
         position: absolute;
@@ -57,23 +57,41 @@
 
         &--1 {
             background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
-             url(./../img/nat-5.jpg);
-             -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-             clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+                url(./../img/nat-5-small.jpg);
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+            @media (min-resolution: 192dpi) and (min-width: 37.5em),
+                (min-width: 125em) {
+                background-image: linear-gradient(to right bottom, $color-secondary-light, $color-secondary-dark),
+                    url(./../img/nat-5.jpg);
+            }
         }
 
         &--2 {
             background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
-            url(./../img/nat-6.jpg);
+                url(./../img/nat-6-small.jpg);
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-             clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+            @media (min-resolution: 192dpi) and (min-width: 37.5em),
+                (min-width: 125em) {
+                background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark),
+                    url(./../img/nat-6.jpg);
+            }
         }
 
         &--3 {
             background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
-            url(./../img/nat-7.jpg);
+                url(./../img/nat-7-small.jpg);
             -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-             clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+            @media (min-resolution: 192dpi) and (min-width: 37.5em),
+                (min-width: 125em) {
+                background-image: linear-gradient(to right bottom, $color-tertiary-light, $color-tertiary-dark),
+                    url(./../img/nat-7.jpg);
+            }
         }
     }
 
@@ -95,24 +113,21 @@
         box-decoration-break: clone;
 
         &--1 {
-            background-image: linear-gradient(
-                to right bottom,
-                 rgba($color-secondary-light, .85),
-                  rgba($color-secondary-dark, .85));
+            background-image: linear-gradient(to right bottom,
+                rgba($color-secondary-light, .85),
+                rgba($color-secondary-dark, .85));
         }
 
         &--2 {
-            background-image: linear-gradient(
-                to right bottom,
-                 rgba($color-primary-light, .85),
-                  rgba($color-primary-dark, .85));
+            background-image: linear-gradient(to right bottom,
+                rgba($color-primary-light, .85),
+                rgba($color-primary-dark, .85));
         }
 
         &--3 {
-            background-image: linear-gradient(
-                to right bottom,
-                 rgba($color-tertiary-light, .85),
-                  rgba($color-tertiary-dark, .85));
+            background-image: linear-gradient(to right bottom,
+                rgba($color-tertiary-light, .85),
+                rgba($color-tertiary-dark, .85));
         }
     }
 
@@ -123,7 +138,7 @@
             list-style: none;
             width: 80%;
             margin: 0 auto;
-            
+
             li {
                 text-align: center;
                 font-size: 1.5rem;
