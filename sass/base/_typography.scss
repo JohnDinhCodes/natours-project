@@ -21,6 +21,7 @@ body {
         animation-name: moveInLeft;
         animation-duration: 1000ms;
         animation-timing-function: ease-out;
+        animation-delay: 700ms;
 
         @include bp(S) {
             letter-spacing: 1rem;
@@ -38,6 +39,7 @@ body {
         letter-spacing: 1.75rem;
 
         animation: moveInRight 1000ms ease-out;
+        animation-delay: 700ms;
 
         @include bp(S) {
             letter-spacing: .5rem;
