@@ -80,23 +80,14 @@
                 <div class="col-1-of-2">
                     <div class="composition">
 
-                        <img srcset="./img/nat-1.jpg 300w, ./img/nat-1-large.jpg 1000w"
-                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                             alt="Photo 1"
-                             class="composition__photo composition__photo--p1"
-                             src="./img/nat-1-large.jpg">
+                        <img srcset="./img/nat-1.jpg 300w, ./img/nat-1-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                            alt="Photo 1" class="composition__photo composition__photo--p1" src="./img/nat-1-large.jpg">
 
-                        <img srcset="./img/nat-2.jpg 300w, ./img/nat-2-large.jpg 1000w"
-                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                             alt="Photo 2"
-                             class="composition__photo composition__photo--p2"
-                             src="./img/nat-2-large.jpg">
-                             
-                        <img srcset="./img/nat-3.jpg 300w, ./img/nat-3-large.jpg 1000w"
-                             sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
-                             alt="Photo 3"
-                             class="composition__photo composition__photo--p3"
-                             src="./img/nat-3-large.jpg">
+                        <img srcset="./img/nat-2.jpg 300w, ./img/nat-2-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                            alt="Photo 2" class="composition__photo composition__photo--p2" src="./img/nat-2-large.jpg">
+
+                        <img srcset="./img/nat-3.jpg 300w, ./img/nat-3-large.jpg 1000w" sizes="(max-width: 56.25em) 20vw, (max-width: 37.5em) 30vw, 300px"
+                            alt="Photo 3" class="composition__photo composition__photo--p3" src="./img/nat-3-large.jpg">
                     </div>
                 </div>
             </div>
@@ -278,7 +269,9 @@
             <div class="row">
                 <div class="story">
                     <figure class="story__shape">
-                        <img class="story__img" src="./img/nat-8.jpg" alt="Person on a tour">
+                        <img class="story__img"
+                             srcset="./img/nat-8-small.jpg 1x,
+                                     ./img/nat-8.jpg 2x" alt="Person on a tour">
                         <figcaption class="story__caption">Mary Smith</figcaption>
                     </figure>
                     <div class="story__text">
@@ -297,7 +290,11 @@
             <div class="row">
                 <div class="story">
                     <figure class="story__shape">
-                        <img class="story__img" src="./img/nat-9.jpg" alt="Person on a tour">
+                        <img class="story__img"
+                             srcset="./img/nat-9-small.jpg 1x,
+                                     ./img/nat-9.jpg 2x"
+                             src="./img/nat-9.jpg"
+                             alt="Person on a tour">
                         <figcaption class="story__caption">Jack Wilson</figcaption>
                     </figure>
                     <div class="story__text">
@@ -372,7 +369,7 @@
     <footer class="footer">
         <div class="footer__logo-box">
             <picture class="footer__logo">
-                <source srcset="./img/logo-green-small-1x.png 1x, ./img/logo-green-small-2x 2x" media="(max-width: 37.5rem)">
+                <source srcset="./img/logo-green-small-1x.png 1x, ./img/logo-green-small-2x.png 2x" media="(max-width: 37.5rem)">
                 <img srcset="./img/logo-green-1x.png 1x, ./img/logo-green-2x.png 2x" alt="Full logo" src="./img/logo-green-2x.png">
             </picture>
         </div>
@@ -402,8 +399,15 @@
         <div class="popup__content">
 
             <div class="popup__left">
-                <img class="popup__img" src="./img/nat-8.jpg" alt="Tour photo">
-                <img class="popup__img" src="./img/nat-9.jpg" alt="Tour photo">
+                <img class="popup__img"
+                     srcset="./img/nat-8-small.jpg 1x,
+                          ./img/nat-8.jpg 2x"
+                     src="./img/nat-8.jpg"
+                     alt="Tour Photo" class="popup__img">
+                <img class="popup__img" srcset="./img/nat-9-small.jpg 1000w, ./img/nat-9.jpg 2000w" alt="Tour Photo">
+
+                <!-- <img class="popup__img" src="./img/nat-8.jpg" alt="Tour photo">
+                <img class="popup__img" src="./img/nat-9.jpg" alt="Tour photo"> -->
                 <!-- MAKE RESPONSIVE HERE -->
             </div>
             <div class="popup__right">
